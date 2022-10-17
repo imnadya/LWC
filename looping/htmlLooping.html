@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Example Component for:each looping" icon-name="standard:loop">
+<div class="slds-var-p-around_medium">
+    <!-- Template Looping -->
+<template for:each={students} for:item="student">
+    <p key={student.id}>Student Name: <strong>{student.name}</strong></p>
+</template>
+</div>
+    </lightning-card>
+</template>
